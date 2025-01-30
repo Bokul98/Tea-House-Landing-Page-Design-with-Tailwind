@@ -11,7 +11,7 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-    <!-- Fontawesome CDN -->
+    <!-- Font awesome CDN -->
     <script
       src="https://kit.fontawesome.com/a9f5f00acc.js"
       crossorigin="anonymous"
@@ -25,12 +25,15 @@
             colors: {
               clifford: "#da373d",
             },
+            fontFamily: {
+              manrope: ["Manrope", "serif"],
+            },
           },
         },
       };
     </script>
   </head>
-  <body>
+  <body class="font-manrope">
     <main class="max-w-[1280px] mx-auto">
       <header class="pt-10 mb-20">
         <div
@@ -173,6 +176,49 @@
           </div>
         </div>
       </section>
+      <!-- News Section -->
+       <section class="my-32">
+        <div class="text-center">
+          <h1 class="font-bold text-5xl">News & Events</h1>
+          <p class="w-4/6 mx-auto text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </div>
+        <!-- Card Section -->
+          <div class="grid md:grid-cols-3">
+            <!-- card 1 -->
+            <div class="p-4">
+              <img class="py-2" src="images/news-1.png" alt="">
+              <!-- Content -->
+              <div class="space-y-2">
+                <span class="text-sm">Feb 05, 2027</span>
+                <h4 class="text-bold">Collecting 8 points for discount</h4>
+                <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                <button>Learn More</button>
+              </div>
+            </div>
+            <!-- Card 2 -->
+            <div class="p-4">
+              <img class="py-2" src="images/news-1.png" alt="">
+              <!-- Content -->
+              <div class="space-y-2">
+                <span class="text-sm">Feb 05, 2027</span>
+                <h4 class="text-bold">Collecting 8 points for discount</h4>
+                <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                <button>Learn More</button>
+              </div>
+            </div>
+            <!-- card 3 -->
+            <div class="p-4">
+              <img class="py-2" src="images/news-1.png" alt="">
+              <!-- Content -->
+              <div class="space-y-2">
+                <span class="text-sm">Feb 05, 2027</span>
+                <h4 class="text-bold">Collecting 8 points for discount</h4>
+                <p class="text-gray-500">There are many variations of passages of Lorem Ipsum available.</p>
+                <button>Learn More</button>
+              </div>
+            </div>
+          </div>
+       </section>
       <!-- Meet Our Client Section -->
        <section class="bg-gradient-to-r from-orange-500 to-red-500 rounded-xl grid grid-cols-1 lg:grid-cols-2 text-white px-7 md:px-16 mb-20">
         <div class="flex justify-center items-center overflow-hidden">
@@ -275,7 +321,7 @@
               <div>
                 <input placeholder="Email Address" type="text" class="bg-transparent border-b-2 border-gray-500 w-4/6 md:w-5/6">
                 <i class="fa-solid fa-chevron-right w-7 h-7 bg-gradient-to-r from-orange-500 to-red-500 inline-flex items-center justify-center rounded-full text-white"></i>
-                <div class="flex justify-between w-2/5 mt-8 mb-2">
+                <div class="flex justify-between w-2/5 mt-8 mb-2 hover:outline-none">
                   <i class="fa-brands fa-facebook text-[18px]"></i><i class="fa-brands fa-square-instagram text-[18px]"></i><i class="fa-solid fa-x text-[18px]"></i>
                 </div>
               </div>
